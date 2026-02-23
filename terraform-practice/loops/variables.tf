@@ -1,6 +1,6 @@
 variable "ami_id" {
   type        = string
-  default     = "ami-09c813fb71547fc4f"
+  default     = "ami-0220d79f3f480ecf5"
   description = "AMI ID of joindevops RHEL9"
 }
 
@@ -52,10 +52,10 @@ variable "instances" {
   default = ["mongodb", "redis", "mysql", "rabbitmq"]
 }
 
-variable "zone_id" {
+/* variable "zone_id" {
   default = "Z032558618100M4EJX8X4"
 }
 
 variable "domain_name" {
   default = "daws84s.site"
-}
+} */
