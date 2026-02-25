@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = " 1-remote-state"
-    key    = "remote-state-demo"
+    bucket = "84s-remote-state"
+    key    = "workspace-demo"
     region = "us-east-1"
-    encrypt        = true #previously we used dynamodb lock but now we dont need that we use s3 native locking
+    encrypt        = true
     use_lockfile = true
   }
 }
