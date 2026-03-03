@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "1-remote-state"
-    key    = "workspace-demo"
+    key    = "vpc-test"
     region = "us-east-1"
     encrypt        = true
     use_lockfile = true
@@ -17,4 +17,5 @@ terraform {
 
 provider "aws" {
   # Configuration options
+  region = "us-east-1"
 }
