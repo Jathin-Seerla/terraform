@@ -6,13 +6,13 @@ terraform {
     }
   }
 
-  backend "s3" {
+  /*  backend "s3" {
     bucket = "1-remote-state"
     key    = "vpc-test"
     region = "us-east-1"
     encrypt        = true
     use_lockfile = true
-  }
+   } */
 }
 
 provider "aws" {
